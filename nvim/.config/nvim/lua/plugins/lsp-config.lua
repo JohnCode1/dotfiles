@@ -27,12 +27,12 @@ return {
 
       local lspconfig = require("lspconfig")
 
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities
-      })
-      lspconfig.ruby_lsp.setup({
-        capabilities = capabilities,
-      })
+      --lspconfig.tailwindcss.setup({
+        --capabilities = capabilities
+      --})
+      --lspconfig.ruby_lsp.setup({
+        --capabilities = capabilities,
+      --})
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
@@ -43,6 +43,6 @@ return {
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
       vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
       vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, {})
-    end,
+    end
   },
 }
