@@ -35,3 +35,6 @@ shell-integration-features = ssh-env
 #custom-shader = /home/chris/crt.glsl
 
 
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95
